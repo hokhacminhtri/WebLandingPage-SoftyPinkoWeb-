@@ -1,0 +1,72 @@
+/* ====================1024px - 1200px==================== */
+@media only screen and (max-width: 1200px) {
+  .main-nav .nav {
+    margin-top: -3%;
+  }  
+}
+
+/* ====================768px - 1023px===================== */
+@media only screen and (max-width: 1023px) {
+/* ===== ABOUT SECTION ===== */
+  .main-nav .nav {
+    visibility: hidden;
+  }
+
+  .mobile-nav-icon {
+    visibility: visible;
+    /* display: inline; */
+  }
+}
+
+/* =====================671px - 767px===================== */
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+
+  /* ===== CONTACT SECTION ===== */
+  .contact-form textarea {
+    width: 90%;
+  }
+
+  .contact-form input {
+    width: 90%;
+  }
+
+  /* ===== HEADER ===== */
+  .heading-main-box {
+    transform: translate(0%, -100%);
+  }
+}
+
+/* ======================481px - 670px====================== */
+@media only screen and (max-width: 670px) {
+
+  p {
+    font-size: 75%;
+  }
+
+  h1 {
+    font-size: 100%;
+  }
+
+/* ===== CONTACT SECTION ===== */
+
+  .contact-form textarea {
+    width: 80%;
+  }
+
+  .contact-form input {
+    width: 80%;
+  }
+}
+
+/* ======================0px - 480px====================== */
+@media only screen and (max-width: 480px) {
+
+}
+

@@ -82,6 +82,18 @@ html {
   color: white;
 }
 
+.sticky {
+  position: fixed;
+  top: 20px;
+  left: 20%;
+  width: 70%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  list-style: none;
+  border: 1px solid;
+}
+
 
 /* --- FEATURES SECTION--- */
 .features-section {

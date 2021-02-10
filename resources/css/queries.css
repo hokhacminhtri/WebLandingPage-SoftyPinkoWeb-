@@ -1,20 +1,39 @@
-/* ====================1024px - 1200px==================== */
-@media only screen and (max-width: 1200px) {
+/* ====================1391px - 1550px==================== */
+@media only screen and (max-width: 1550px) {
+  html {
+    font-size: 16px;
+  }
+  /* .main-nav .nav {
+    margin-right: %;
+  }   */
+}
+
+/* ====================1051px - 1390px==================== */
+@media only screen and (max-width: 1390px) {
   .main-nav .nav {
-    margin-top: -3%;
+    display: flex;
+    justify-content: center;
   }  
 }
 
-/* ====================768px - 1023px===================== */
-@media only screen and (max-width: 1023px) {
+/* ====================768px - 1050px===================== */
+@media only screen and (max-width: 1250px) {
 /* ===== ABOUT SECTION ===== */
   .main-nav .nav {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
+  }
+  
+  .header-area .main-nav {
+    padding: 20px;
   }
 
   .mobile-nav-icon {
     visibility: visible;
-    /* display: inline; */
+    font-size: 200%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 }
 

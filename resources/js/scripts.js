@@ -13,14 +13,16 @@ $(document).ready(function () {
 
   // mobile nav
   $(".mobile-nav-icon").click(function () {
-    $(".nav").slideToggle(200);
+    // $(".nav").slideToggle();
 
     if ($(".mobile-nav-icon").hasClass("fa-bars")) {
       $(".mobile-nav-icon").addClass("fa-times");
       $(".mobile-nav-icon").removeClass("fa-bars");
+      $(".nav").addClass("toggle-on");
     } else {
       $(".mobile-nav-icon").addClass("fa-bars");
       $(".mobile-nav-icon").removeClass("fa-times");
+      $(".nav").removeClass("toggle-on");
     }
   });
 });

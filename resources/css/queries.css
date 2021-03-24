@@ -1,29 +1,19 @@
-/* ====================1391px - 1550px==================== */
-@media only screen and (max-width: 1550px) {
-  html {
-    font-size: 16px;
-  }
-  /* .main-nav .nav {
-    margin-right: %;
-  }   */
-}
-
-/* ====================1051px - 1390px==================== */
+/* ====================1285px - 1390px==================== */
 @media only screen and (max-width: 1390px) {
   .main-nav .nav {
     display: flex;
     justify-content: center;
-  }  
+  }
 }
 
-/* ====================768px - 1050px===================== */
-@media only screen and (max-width: 1250px) {
-/* ===== ABOUT SECTION ===== */
+/* ====================768px - 1284px===================== */
+@media only screen and (max-width: 1284px) {
+  /* ===== ABOUT SECTION ===== */
   .main-nav .nav {
     /* visibility: hidden; */
     display: none;
   }
-  
+
   .header-area .main-nav {
     padding: 20px;
   }
@@ -34,6 +24,38 @@
     position: absolute;
     top: 20px;
     right: 20px;
+  }
+
+  .main-nav .nav.toggle-on {
+    display: block;
+    -webkit-animation: aniToggle 0.8s ease-in forwards;
+            animation: aniToggle 0.8s ease-in forwards;
+  }
+
+  @-webkit-keyframes aniToggle {
+    from {
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+    }
+    to {
+      height: 100px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @keyframes aniToggle {
+    from {
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+    }
+    to {
+      height: 100px;
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 
@@ -64,7 +86,6 @@
 
 /* ======================481px - 670px====================== */
 @media only screen and (max-width: 670px) {
-
   p {
     font-size: 75%;
   }
@@ -73,7 +94,7 @@
     font-size: 100%;
   }
 
-/* ===== CONTACT SECTION ===== */
+  /* ===== CONTACT SECTION ===== */
 
   .contact-form textarea {
     width: 80%;
@@ -86,6 +107,4 @@
 
 /* ======================0px - 480px====================== */
 @media only screen and (max-width: 480px) {
-
 }
-

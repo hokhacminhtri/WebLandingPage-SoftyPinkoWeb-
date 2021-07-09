@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // sticky nav
+  /* --- sticky nav --- */
   $(".header-area").waypoint(
     function (direction) {
       if (direction === "down") {
@@ -11,10 +11,8 @@ $(document).ready(function () {
     }
   );
 
-  // mobile nav
+  /* --- mobile nav --- */
   $(".mobile-nav-icon").click(function () {
-    // $(".nav").slideToggle();
-
     if ($(".mobile-nav-icon").hasClass("fa-bars")) {
       $(".mobile-nav-icon").addClass("fa-times");
       $(".mobile-nav-icon").removeClass("fa-bars");
@@ -24,5 +22,16 @@ $(document).ready(function () {
       $(".mobile-nav-icon").removeClass("fa-times");
       $(".nav").removeClass("toggle-on");
     }
+  });
+
+  /* --- scroll --- */
+  $("a").click(function (event) {
+    $("html, body").animate(
+      {
+        scrollTop: $($.attr(this, "href")).offset().top,
+      },
+      800
+    );
+    event.preventDefault();
   });
 });

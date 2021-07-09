@@ -77,11 +77,6 @@
   .contact-form input {
     width: 90%;
   }
-
-  /* ===== HEADER ===== */
-  .heading-main-box {
-    transform: translate(0%, -100%);
-  }
 }
 
 /* ======================481px - 670px====================== */
@@ -105,6 +100,3 @@
   }
 }
 
-/* ======================0px - 480px====================== */
-@media only screen and (max-width: 480px) {
-}
